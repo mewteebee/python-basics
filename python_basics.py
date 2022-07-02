@@ -71,6 +71,57 @@ months_of_the_year = (
     "dec",
 )
 
+# functions
+def what_do_we_think_of_tottenham():
+    print("sh*t")
+
+what_do_we_think_of_tottenham()
+
+def what_do_we_think_of_shit():
+    print("tottenham")
+
+what_do_we_think_of_shit()
+
+def average_age(age):
+    average_age = sum(age)/len(age)
+    return average_age
+
+avg_age = average_age([22, 23, 34, 24])
+print(avg_age)
+
+
+
+# conditional statements
+def performance_index(goals_and_assists):
+    if goals_and_assists > 20:
+        return "good season"
+    elif goals_and_assists > 25:
+        return "great season"
+    elif goals_and_assists > 30:
+        return "superb season"
+
+print(performance_index(22))
+
+# user input 
+# user_input = input("What team do you support? ")
+# print(user_input.upper())
+
+# loops
+for players in starting_eleven:
+    print(players)
+
+i = 0
+while i < 5:
+    print("Arsenal are the biggest club in london")
+    i=i+1
+
+
+# list comprehensions 
+squad_ages = [22, 34, 21, 37, 40, 20, 19, 17, 18]
+even_ages = [age % 2 == 0 for age in squad_ages]
+print(even_ages)
+
+
 
 
 
